@@ -1,0 +1,13 @@
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="wrench" href="#/prefs"><span class="glyphicon glyphicon-wrench"></span></a>
+      <a class="navbar-brand" href="#">Duschfee</a>
+    </div>
+  </div>
+</nav>
+<p class="centered time">{{min}}:{{sec}}</p>
+<p class="centered phase">{{phase}}</p>
+<p class="timerButtonBar">
+  <button type="button" ng-class="buttonClass" class="btn btn-lg startStopButton" ng-click="startStop()">{{buttonLabel}}</button>
+</p>
