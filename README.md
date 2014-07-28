@@ -1,4 +1,4 @@
 duschfee
 ========
 
-The legendary "duschfee" application
+The legendary "duschfee" application - Really?
