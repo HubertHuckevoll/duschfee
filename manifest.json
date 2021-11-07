@@ -1,0 +1,27 @@
+{
+  "short_name": "duschfee",
+  "name": "duschfee - A Shower Timer",
+  "theme_color": "#000",
+  "background_color": "#000",
+  "orientation": "portrait",
+  "start_url": "index.html",
+  "display": "standalone",
+  "icons":
+  [
+    {
+      "src": "img/icon96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "img/icon192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "img/icon512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

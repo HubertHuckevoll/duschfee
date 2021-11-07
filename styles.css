@@ -1,0 +1,167 @@
+body
+{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 16px;
+  color: white;
+  background-color: transparent;
+}
+
+a, a:active, a:visited
+{
+  color: navy;
+  text-decoration: none;
+}
+
+a:hover
+{
+  text-decoration: underline;
+}
+
+#wrapper
+{
+  background-image: url(./img/fairy.jpg);
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: darken;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#title
+{
+  padding-top: 20px;
+  text-align: center;
+  font-size: 15vw;
+  font-family: Verdana;
+  font-weight: bold;
+  background: linear-gradient(to bottom, black, transparent);
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+#mainTabbox
+{
+  text-align: center;
+}
+
+#time
+{
+  font-size: 12vw;
+  color: white;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+#startStop
+{
+  margin-top: 40px;
+  width: 30vw;
+  height: 30vw;
+  color: white;
+  border: none;
+  border-radius: 50%;
+}
+
+.startButton
+{
+  background: url('./img/play_arrow_white_24dp.svg') center no-repeat green;
+  background-size: contain;
+}
+
+.stopButton
+{
+  background: url('./img/stop_white_24dp.svg') center no-repeat red;
+  background-size: contain;
+}
+
+#startStop:focus
+{
+  outline: none;
+}
+
+.formoTab
+{
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.formoTabStripe
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-direction: row;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(to top, black, transparent);
+  color: white;
+}
+
+.formoTabStripe li
+{
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+  height: 60px;
+  flex-grow: 1;
+  background-color: black;
+  color: white;
+}
+
+.formoTabStripe li.formoTabStripeActive
+{
+  background-color: transparent;
+  color: white;
+  border: 1px solid transparent;
+  border-top: 1px solid transparent;
+}
+
+#prefsTab
+{
+  text-align: left;
+  display: none;
+  padding: 15px;
+  background-color:rgba(0, 0, 0, 0.5);
+}
+
+.prefBlock
+{
+  margin-bottom: 20px;
+}
+
+select#prefFinalMinuteMode
+{
+  display: block;
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+}
+
+#aboutTab
+{
+  padding: 15px;
+  background-color:rgba(0, 0, 0, 0.5);
+  text-align: left;
+  box-sizing: border-box;
+}
+
+#aboutTab a
+{
+  color: white;
+  text-decoration: underline;
+}
+
+footer ul img
+{
+  vertical-align: bottom;
+  margin-right: 5px;
+}

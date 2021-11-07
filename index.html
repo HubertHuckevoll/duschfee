@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>duschfee</title>
+  <meta charset="utf-8">
+  <meta name="application-name" content="duschfee">
+  <meta name="apple-mobile-web-app-title" content="duschfee">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+  <meta name="theme-color" content="#000">
+  <link rel="icon" sizes="128x122" href="./img/icon96.png">
+  <link rel="apple-touch-icon" href="./img/icon96.png">
+  <link rel="manifest" href="manifest.json">
+  <script src="/frontschweine/js/FormoTabbox.js"></script>
+  <script src="/frontschweine/js/FormoSlider.js"></script>
+  <script src="NoSleep.js"></script>
+  <script src="Timer.js"></script>
+  <script src="Options.js"></script>
+  <script src="Speech.js"></script>
+  <script src="Squeak.js"></script>
+  <script src="TimerView.js"></script>
+  <script src="PrefsView.js"></script>
+  <script src="Duschfee.js"></script>
+  <link rel="stylesheet" href="/frontschweine/css/FormoSlider.css">
+  <link rel="stylesheet" href="/frontschweine/css/FormoTabbox.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="wrapper">
+    <header id="title">duschfee</header>
+
+    <!--div id="content"-->
+      <div id="mainTabbox" class="formoTabBox">
+
+        <div class="formoTab" id="clockTab">
+          <div id="time"><span id="tm">--</span>:<span id="ts">--</span></div>
+          <button id="startStop" class="startButton"></button>
+        </div>
+
+        <div class="formoTab" id="prefsTab">
+          <h3>Settings</h3>
+          <div class="prefBlock">
+            <formo-slider id="prefTime" class="formoSlider" label="Shower Time (m)" value="" max="" min="" step=""></formo-slider>
+          </div>
+          <div class="prefBlock">
+            <label for="prefFinalMinuteMode">During the final minute</label>
+            <select id="prefFinalMinuteMode">
+              <option value="nothing">Do nothing fancy</option>
+              <option value="beep">Beep</option>
+              <option value="countdown">Countdown</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="formoTab" id="aboutTab">
+          <h3>About</h3>
+          <p>
+            <i>duschfee - A Shower Timer.</i>
+          </p>
+          <p>
+            Created by <a href="https://www.facebook.com/profile.php?id=100006858609870" target="_blank">MeyerK</a> in 2015/9ff.
+          </p>
+          <p>
+            No frameworks were harmed in the making of this app.
+            But a lot of love goes to <a href="https://github.com/richtr/NoSleep.js">NoSleep</a>.
+          </p>
+          <p>
+            Also contains some material <a href="https://fonts.google.com/icons" target="_blank">icons</a> made by Google.
+          </p>
+        </div>
+
+      </div>
+
+      <footer>
+        <formo-tabbox id="navTabs" tabbox="mainTabbox" active="clockTab">
+          <ul class="formoTabStripe">
+            <li tab="clockTab" role="button"><img src="./img/timer_white_24dp.svg"><span>Timer</span></li>
+            <li tab="prefsTab" role="button"><img src="./img/settings_white_24dp.svg"><span>Settings</span></li>
+            <li tab="aboutTab" role="button"><img src="./img/help_outline_white_24dp.svg"><span>About</span></li>
+          </ul>
+        </formo-tabbox>
+      </footer>
+  </div>
+</body>
+</html>
